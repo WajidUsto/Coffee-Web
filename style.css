@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --brown : #2c1e1e;
+    --lightbrown :#7c573c;
+    --white :#ffffff;
+}
+#nav-logo{
+    height: 6rem;
+}
+.nav-bar{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 90%;
+    height: 12vh;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.nav-list{
+    display: flex;
+    gap: 5rem;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+.hero{
+    display: flex;
+}
+.hero-splitleft{
+    background-color: var(--brown);
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 2rem;
+    color: white;
+}
+.content h1{
+    font-size: 6rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .02rem var(--white);
+    letter-spacing: .2rem;
+    font-family: "Lemon", serif;
+}
+.content p{
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 1.6rem;
+    margin: 2rem 0; 
+    letter-spacing: 1.5px;
+    max-width: 75%;
+}
+.content button{
+    background: radial-gradient(at top left, #5a4740, #2c1e1e);
+    padding: 1.5rem 3rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.404);
+    border-radius: 30px;
+    color: white;
+    font-size: 21px;
+    letter-spacing: .1rem;
+}
+.content button:hover{
+    background: radial-gradient(at bottom right, #5a4740, #2c1e1e);
+}
+.hero-splitright{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--lightbrown);
+}
+.nav-list .slider{
+    background-color: rgb(255, 255, 255, 0.352);
+    width: 7.8rem;
+    height: 7.4rem;
+    position: absolute;
+    top: 0;
+    right: 436px;
+    border-top: solid var(--brown);
+    border-radius: 0 0 3rem 3rem;
+    backdrop-filter: blur(0.5rem);
+    z-index: -1;
+    transition: .6s all ease-in-out;
+}
+.nav-list li:nth-child(2):hover ~ .slider{
+    right: 340px;
+}
+.nav-list li:nth-child(3):hover ~ .slider{
+    right: 230px;
+}
+.nav-list li:nth-child(4):hover ~ .slider{
+    right: 111px;
+}
+.nav-list li:nth-child(5):hover ~ .slider{
+    right: -7px;
+}
