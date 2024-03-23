@@ -112,3 +112,8 @@ html{
 .nav-list li:nth-child(5):hover ~ .slider{
     right: -7px;
 }
+.circle{
+    height: 9rem;
+    width: 9rem;
+    background-color: white;
+}
