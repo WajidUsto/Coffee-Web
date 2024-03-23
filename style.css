@@ -83,6 +83,7 @@ html{
     display: flex;
     align-items: center;
     margin: 0 auto;
+    padding-left: 10rem;
     width: 50%;
     min-height: 100vh;
     background-color: var(--lightbrown);
@@ -112,8 +113,19 @@ html{
 .nav-list li:nth-child(5):hover ~ .slider{
     right: -7px;
 }
-.circle{
-    height: 9rem;
-    width: 9rem;
-    background-color: white;
+.middle{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.middle .circle{
+    height: 12rem;
+    width: 12rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9rem; 
 }
